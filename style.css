@@ -82,7 +82,7 @@ body {
 @font-face {
   font-family: "NicoKaku";
   /* 任意の名前 */
-  src: url("fonts/nico-kaku.ttf") format("truetype");
+  src: url("nico-kaku.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
