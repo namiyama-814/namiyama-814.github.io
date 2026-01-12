@@ -246,3 +246,41 @@ section {
   position: relative;
   overflow: hidden;
 }
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+
+  header.main {
+    padding: 2rem 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .catch {
+    font-size: 14px;
+  }
+
+  /* カードを画面いっぱいに */
+  .card {
+    width: 100% !important;
+    max-width: 360px;
+  }
+
+  /* カード間の余白を少し詰める */
+  .os-card,
+  .lang-card,
+  .cart-card,
+  .works-card {
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
