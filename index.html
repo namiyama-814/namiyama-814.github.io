@@ -1,68 +1,166 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='style.css' rel='stylesheet'>
-    <title>ポートフォリオサイト</title>
-  </head>
-  <body>
-    <h1>namiyama</h1>
-        <h2>About</h2>
-    <p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポートフォリオサイト</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="main section-fade">
+    <div class="hero">
+      <h1 class="title">namiyama</h1>
+      <hr class="line">
+      <p class="catch">
+        ネットの向こうの、リアルを動かす。人間らしさと、つながるデジタルを。
+      </p>
+    </div>
+  </header>
+
+  <section class="about section-fade">
+
+    <h2 style="text-align:center">About</h2>
+    <p style="text-align:center">
       namiyamaと申します<br>
-      💻🕵️をやります
+      💻🕵️をやります<br>
+      地球に住んでいます
     </p>
+  </section>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>namiyama(namiyama_814)</li>
-      <li>地球🌎</li>
-      <li>Web開発</li>
-    </ul>
+  <section class="skills section-fade">
 
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>OS</th>
-        <td>Windows, ChromeOS など</td>
-      </tr>
-      <tr>
-        <th>Engine, Frameworks</th>
-        <td>Node.js, Express など</td>
-      </tr>
-      <tr>
-        <th>Tool, MiddleWare</th>
-        <td>Git, PostgreSQL など</td>
-      </tr>
-      <tr>
-        <th>資格・免許</th>
-        <td>パソコン能力評価試験4級、タイピング技能検定8級 など</td>
-      </tr>
-    </table>
+    <h2 style="text-align:center">Skills</h2>
 
-    <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
-    <ul>
-      <li><a href="https://github.com/namiyama-814">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
-        <ul>
-          <li><a href="https://namiyama-814.github.io/assessment/assessment.html">あなたのいいところ診断</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
-        </ul>
-      </li>
-    </ul>
+    <h3 style="text-align:center">OS</h3>
 
-    <h3>Contact</h3>
-    <p>連絡先や SNS のアカウントを書きましょう。</p>
-    <ul>
-      <li><a href="mailto:name@example.com">Mail</a></li>
-      <li><a href="https://x.com/ZENStudy_info">X</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
-    
-  </body>
+    <div class="os-card">
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/ChromeOS.png" alt="ChromeOS" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">ChromeOS</h5>
+          <p class="card-text">二年ほどChromeOSを触っていました。教育現場でしか使えないゴミです</p>
+          <a href="https://chromeos.google/intl/ja_jp/" class="btn btn-primary" target="_blank">公式ページ</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/WindowsOS.png" alt="WindowsOS" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">WindowsOS</h5>
+          <p class="card-text">メイン利用です。巷で言われているほどゴミではないと思うよ<br> </p>
+          <a href="https://www.microsoft.com/ja-jp/windows?r=1" class="btn btn-primary" target="_blank">公式ページ</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="lang">
+    <h3 style="text-align:center">Languages</h3>
+
+    <div class="lang-card">
+      <div class="card" style="width: 18rem;">
+        <img src="images/html.png" alt="HTML" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">中二で初めて触りました。1時間で詐欺サイトを作った覚えがある。</p>
+          <a href="https://html.spec.whatwg.org/multipage/" class="btn btn-primary" target="_blank">公式ドキュメント</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/css.png" alt="CSS" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">CSS</h5>
+          <p class="card-text">CSSはノリで覚えた。めんどくさいところは全部ChatGPT。</p>
+          <a href="https://sass-lang.com/documentation/" class="btn btn-primary" target="_blank">公式ドキュメント</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/js.png" alt="JavaScript" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <p class="card-text">割と真面目に勉強した。大なりとか比較表現とかよくわからん。</p>
+          <a href="https://html.spec.whatwg.org/multipage/" class="btn btn-primary" target="_blank">公式ドキュメント</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="cart">
+    <h3 style="text-align:center">Certifications</h3>
+
+    <div class="cart">
+
+      <div class="cart-card">
+
+        <div class="card" style="width: 18rem;">
+          <img src="images/パソコン検定.png" alt="パソコン能力評価試験" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">パソコン能力評価試験4級</h5>
+            <p class="card-text">中二で取得。無料だから取った。小学生でも取れる。ホームページがダサい<br>　</p>
+            <a href="https://www.opentests.com/" class="btn btn-primary" target="_blank">公式サイト</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="images/タイピング検定.png" alt="タイピング技能検定" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">タイピング技能検定8級</h5>
+            <p class="card-text">中二で取得。無料だから取った。認定料を払ってないからほんとは名乗ってはいけない</p>
+            <a href="https://web.e-typing.ne.jp/" class="btn btn-primary" target="_blank">公式サイト</a>
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+
+  <section class="works">
+    <h2 style="text-align:center">Works</h2>
+
+    <div class="works-card">
+      <div class="card" style="width: 18rem;">
+        <img src="images/あなたのいいところ診断.png" alt="あなたのいいところ診断" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">あなたのいいところ診断</h5>
+          <p class="card-text">割と形になっていると思う。BootStrapは楽しい</p>
+          <a href="https://namiyama-814.github.io/assessment/assessment.html" class="btn btn-primary"
+            target="_blank">使ってみる</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/時間あてゲーム.png" alt="時間あてゲーム" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">時間あてゲーム</h5>
+          <p class="card-text">一番最初に作った作品。CSSを使ってないからUIは最低限</p>
+          <a href="https://namiyama-814.github.io/timeguess/js-object.html" class="btn btn-primary"
+            target="_blank">使ってみる</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/ニコニコ動画.png" alt="ニコニコ(Re:仮)" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">ニコニコ(Re:仮)復元</h5>
+          <p class="card-text">多分そのうち作る。なんとなく頭の中に構想はある。</p>
+          <a href="https://dic.nicovideo.jp/a/%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%28re%3A%E4%BB%AE%29"
+            class="btn btn-primary" target="_blank">使ってみる</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
 </html>
