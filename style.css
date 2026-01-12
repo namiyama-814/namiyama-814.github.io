@@ -92,7 +92,7 @@ body {
 section.about {
   height: 100vh;
   /* セクションを画面高さに */
-  background-color: #ffffff;
+  background-color: #f8f9fa;
 
   display: flex;
   /* フレックスボックスを使う */
@@ -209,7 +209,7 @@ section.cart {
 section.works {
   height: 100vh;
   /* セクションを画面高さに */
-  background-color: #ffffff;
+  background-color: #f8f9fa;
 
   display: flex;
   /* フレックスボックスを使う */
